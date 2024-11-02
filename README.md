@@ -2,6 +2,11 @@
 
 A proof of concept for conversational AI (like GPT) using statistical compression. The attached dataset (`result10.txt`) is a trimmed version of the TinyStories dataset.
 
-TODO: Try out the paq8 variants that use a MoE architecture which may be more suited for this project.
+Example response to a prompt after 1min 40s of training (from scratch) on a 1MB slice of the TinyStories dataset:
 
-Uses ppmd_sh, a variant of Dymitry Shkarin's PPMd var J modified by Eugene Shelwien.
+```
+User says: Once upon a time,
+PAQ says:  there was a little boy named Timmy. Timmy liked to swim in the big ball how to catch it. Timmy that could fly. His mom took off.
+```
+
+Uses ppmd_sh, a variant of Dymitry Shkarin's PPMd var J modified by Eugene Shelwien. The PAQ variant uses PAQ8 code (chiefly) by Matt Mahoney.
